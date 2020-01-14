@@ -1,8 +1,10 @@
 package com.hdu.library.mapper;
 
-import com.hdu.library.entry.User;
-import java.util.List;
+import org.apache.ibatis.annotations.Mapper;
 
+import com.hdu.library.entry.User;
+
+@Mapper
 public interface UserMapper {
 
     int deleteByPrimaryKey(Integer uId);

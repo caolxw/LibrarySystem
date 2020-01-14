@@ -10,7 +10,7 @@ import com.hdu.library.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 
-	@Autowired
+	@Autowired(required=true)
 	UserMapper userMapper;
 	
 	@Override
